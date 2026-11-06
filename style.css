@@ -6,3 +6,77 @@
 .footer-contact a{color:#e4c58b}
 .footer-contact a:hover{color:#fff;text-decoration:underline}
 @media(max-width:640px){.footer-contact{grid-template-columns:1fr 1fr;width:100%}}
+/* Pengaturan Latar Belakang dan Jarak Section */
+.program-section {
+  background-color: #f0f8ff; /* Warna biru sangat muda mirip di gambar */
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Pengaturan Teks Judul dan Subjudul */
+.program-header h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.program-header p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Pengaturan Tata Letak 3 Kolom */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px; /* Jarak antar kartu */
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Agar bisa responsif turun ke bawah di layar HP */
+}
+
+/* Desain Kartu (Warna, Sudut Melengkung, dan Transisi Animasi) */
+.program-card {
+  background-color: #dbeafe; /* Warna dasar kartu biru muda */
+  width: 320px;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out; /* Animasi mulus saat kursor diarahkan */
+}
+
+/* Pengaturan Gambar di Dalam Kartu */
+.program-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Pengaturan Teks di Dalam Kartu */
+.card-content {
+  padding: 15px 10px 5px;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Efek Hover (Bayangan Cyan Menyala seperti di gambar) */
+.program-card:hover {
+  transform: translateY(-5px); /* Kartu sedikit naik saat disentuh mouse */
+  box-shadow: 0 0 25px 5px rgba(0, 255, 255, 0.4); /* Efek cahaya cyan */
+  background-color: #e0f2fe; /* Warna kartu sedikit berubah terang */
+}
